@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">监控列表</string>
+    <string name="title_activity_fold">FoldActivity</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="num_of_folds">Number Of Folds</string>
+    <string name="animate">Animate</string>
+    <string name="camera_feed">Camera Feed</string>
+    <string name="static_image">Static Image</string>
+    <string name="sepia_effect_on">Sepia On</string>
+    <string name="interval_key">Interval:</string>
+    <string name="interval_value">60</string>
+    <string name="status_code_key">StatusCode:</string>
+    <string name="status_code_value">200</string>
+    <string name="web_time">2015-03-28 21:40:57</string>
+    <string name="web_percent">100.0%</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_header_refresh_time">更新</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="title_activity_main">Folding Library</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_folding">FoldingLayout</string>
+    <string name="app_foldingdrawer">FoldingDrawerLayout</string>
+    <string name="app_foldingpanel">FoldingPanelLayout</string>
+
+</resources>
