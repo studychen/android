@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_normal"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/single_bomb"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <com.tomchen.smsbomb.view.FastChangeTextView
+            android:id="@+id/single_bomb_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/bomb_origin_value"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/total_bomb"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <com.tomchen.smsbomb.view.FastChangeTextView
+            android:id="@+id/total_bomb_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/bomb_origin_value"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableBottom="@drawable/line"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/times"
+            style="@style/SmsEditText"
+            android:hint="@string/times_hint"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fireup"
+            style="@style/SmsButton"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/fireup" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/SmsButton"
+            android:layout_marginEnd="20dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>
