@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- appwidget-provider Widget的配置文件  -->
+<!-- android:minWidth 最小宽度 -->
+<!-- android:minHeight 最小高度 -->
+<!-- android:updatePeriodMillis 组件更新频率（毫秒） -->
+<!-- android:initialLayout 组件布局XML的位置 -->
+<!-- android:configure Widget设置用Activity -->
+
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="220dip"
+    android:minHeight="146dip"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/my_time"
+/>

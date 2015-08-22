@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部导航 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_first_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_actionbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/ll_s"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_yhsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:text="搜索课程"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            </LinearLayout>
+    </RelativeLayout>
+    <!-- 分类 ,屏幕可下拉刷新 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg_all" >
+
+        <EditText
+            android:id="@+id/txtAddr"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btOk"
+            android:background="@drawable/edit_bg_all"
+            android:completionThreshold="2"
+            android:drawableLeft="@drawable/ic_global_search_textbox_current"
+            android:hint="请输入搜索关键字" />
+		<Button android:id="@+id/btn_login"
+	            android:layout_width="80dp"
+	             android:layout_alignBaseline="@+id/txtAddr"
+            android:layout_alignParentRight="true"	            
+	            android:background="@drawable/isloginbutton"
+	            android:text="登录"
+	            android:textColor="@color/white"
+	            android:clickable="true"/>
+        <TextView
+            android:id="@+id/btOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtAddr"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:background="@drawable/text_search"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

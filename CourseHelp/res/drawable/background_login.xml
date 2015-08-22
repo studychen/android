@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<gradient 
+		android:startColor="#FFACDAE5"
+		android:endColor="#FF72CAE1"
+		android:angle="45"
+	/>
+</shape>
+
+<!-- startColor是渐变开始的颜色值，endColor是渐变结束的颜色值，angle是渐变的角度。
+其中#FFACDAE5中，FF是Alpha值，AC是RGB的R值，DA是RGB的G值，E5是RGB的B值，
+每个值在00~FF取值，即透明度、红、绿、蓝有0~255的分值 -->

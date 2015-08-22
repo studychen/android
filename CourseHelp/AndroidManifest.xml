@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chenxb.coursehelp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+     <instrumentation android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.chenxb.coursehelp"
+        android:label="第一个单元测试" />"
+    
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />   
+
+    <application
+        android:name="com.course.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.chenxb.coursehelp.MainActivity"
+            android:label="@string/app_name"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.SearchActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.ThirdMyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.NewsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.MoreActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.chenxb.coursehelp.OldCourseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.NewLoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.chenxb.coursehelp.MyInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <receiver android:name="CourseHelp" android:label="CourseHelp">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/my_time" />
+        </receiver>
+        <service android:name="MyTime$MyService" />
+        
+         <!-- 添加widget组件 -->
+        <receiver android:name=".WeatherWidget" 
+            android:label="@string/app_name"
+             >
+            <intent-filter >
+                <!-- 指定AppWidgetProvider接收的广播 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget" />
+        </receiver>
+        
+        <!-- 自定义的后台更新widget服务 -->
+        <service android:name=".UpdateWidgetService"></service>
+        <uses-library android:name ="android.test.runner" />
+    </application>
+
+</manifest>

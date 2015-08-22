@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="294dip"
+    android:minHeight="146dip"
+    android:initialLayout="@layout/widget_layout"
+    android:configure="com.weather.app.SetCityActivity" > <!-- 设置它的配置Activity为SetCityActivity -->
+</appwidget-provider>

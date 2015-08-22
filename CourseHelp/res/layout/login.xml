@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+
+    <!--
+         padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="15dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_login_div"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/ivlogo"
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+                    android:background="@drawable/login_top" >
+                </ImageView>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow android:layout_marginTop="30dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="帐号："
+                    android:textSize="20sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/account"
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dip"
+                    android:inputType="numberDecimal"
+                    android:text="1402120978"
+                    android:maxLength="20" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="密码："
+                    android:textSize="20sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dip"
+                    android:text="139526"
+                    android:inputType="textPassword" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnlogin"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_special_disease_circle"
+                    android:text="登录" >
+                </Button>
+
+                <Button
+                    android:id="@+id/btnexit"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_special_disease_circle"
+                    android:text="退出" >
+                </Button>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

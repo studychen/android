@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:orientation="horizontal"
+    android:background="@color/gray_light" >
+    
+    <LinearLayout
+        android:id="@+id/linearview_logined"
+        android:layout_width="280dp"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/logined_name"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="陈小波同学" />
+
+        <TextView
+            android:id="@+id/logined_number"
+            android:layout_marginTop="5dp"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="学号：1402120978"
+            android:textSize="18sp" />
+	</LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_listitem_arrow_right" />
+	
+</LinearLayout>

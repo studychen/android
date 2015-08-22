@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    android:background="@color/citylist_divider" >
+    
+ 	
+    <!-- 头部导航 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_actionbar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+        <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dip"
+              android:src="@drawable/abs__ic_ab_back_holo_dark"/>
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:layout_marginLeft="4dip"
+             android:textColor="@android:color/white"
+            android:text="登录"/>
+         <RelativeLayout android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             >
+              <ImageView android:id="@+id/ib_mines"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/widget_line"
+             android:layout_alignParentRight="true"
+            android:layout_marginRight="70dip"
+             />
+             <LinearLayout android:layout_width="70dip"
+                 android:layout_height="50dip"
+                android:gravity="center" 
+                android:layout_alignParentRight="true">
+                   <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:text="找回密码"
+                  />
+             </LinearLayout>
+            
+         </RelativeLayout>
+    </LinearLayout>
+    
+    <!-- 登录界面 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        	<ImageView
+		        android:id="@+id/ivlogo"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dip"
+		        android:background="@drawable/login_top" >
+    		</ImageView>
+        
+	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dip"
+	            android:background="@drawable/background_login_div"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal">
+	        	<EditText android:id="@+id/et_username"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="15dip"
+	        	    android:layout_marginRight="15dip"
+	        	    android:layout_marginTop="40dip"
+	        	    android:inputType="numberDecimal"
+	        	    android:layout_gravity="center"
+	        	    android:hint="学号"
+	        	    android:textColorHint="@color/abs__bright_foreground_disabled_holo_dark"/>
+	        	
+	        	<EditText android:id="@+id/et_userpwd"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="15dip"
+	        	    android:layout_marginRight="15dip"
+	        	    android:layout_marginTop="40dip"
+	        	    android:layout_marginBottom="20dip"
+	        	    android:layout_gravity="center"
+	        	    android:hint="密码"
+	        	    android:inputType="textPassword"
+	        	    android:textColorHint="@color/abs__bright_foreground_disabled_holo_dark"/>
+	    	</LinearLayout>
+	    	<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="25dip"
+		        android:orientation="horizontal" >
+		
+		        <CheckBox
+		            android:id="@+id/cbrp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="记住密码"
+		            android:textSize="12sp" >
+		        </CheckBox>
+		
+		        <CheckBox
+		            android:id="@+id/cbal"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="自动登录"
+		            android:textSize="12sp" >
+		        </CheckBox>
+		    </LinearLayout>
+	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center">
+	        <Button android:id="@+id/btn_login"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="15dip"
+	            android:layout_marginRight="15dip"	            
+	            android:background="@drawable/isloginbutton"
+	            android:text="登录"
+	            android:textColor="@color/white"
+	            android:clickable="true"/>
+	         </LinearLayout>
+	</LinearLayout>    
+        
+
+</LinearLayout>
