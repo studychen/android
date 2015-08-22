@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<!--android:background="#88888888" 颜色差不多  -->
+    <View 
+        android:id="@+id/full_view"
+        android:onClick="true"
+        android:focusable="true"
+    	android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#80000000"
+		android:visibility="gone">
+    </View>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/top_bar_bg"
+	        android:orientation="horizontal" >
+	
+	        <ImageButton
+	            android:id="@+id/ib_back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/main_menu_new" />
+	
+	        <View
+	            android:layout_width="1dip"
+	            android:layout_height="fill_parent"
+	            android:layout_margin="5dip"
+	            android:background="@drawable/top_bar_divider" />
+	
+	        <TextView
+	            android:id="@+id/main_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="60dip"
+	            android:text="@string/last_news"
+	            android:textColor="@android:color/white"
+	            android:textSize="26sp" />
+	    </LinearLayout>
+	    <FrameLayout 
+    		android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+	        
+	    	<!-- android:visibility="gone" -->
+			<com.chenxb.app.ui.XListView
+		        android:id="@+id/xListView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+		        android:fastScrollEnabled="true"
+		        android:cacheColorHint="#00000000">
+		    </com.chenxb.app.ui.XListView>
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:visibility="gone" 
+				android:id="@+id/full_view_loading">
+				<ProgressBar
+	    		    android:id="@+id/main_head_progress"
+	    		    style="@style/loading_small"
+	    		    android:layout_alignParentTop="true"
+	    		    android:layout_centerHorizontal="true"
+	    		    android:layout_marginTop="170dp">
+				</ProgressBar>
+
+	    		<TextView
+	    		    android:id="@+id/text1"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_below="@+id/main_head_progress"
+	    		    android:layout_centerHorizontal="true"
+	    		    android:layout_marginTop="14dp"
+	    		    android:text="电院新闻"
+	    		    android:textColor="#707070"
+	    		    android:textSize="30.0dip" />
+	    		<TextView
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_below="@id/text1"
+	    		    android:layout_centerHorizontal="true"
+	    		    android:layout_marginTop="12dp"
+	    		    android:text="See News"
+	    		    android:textColor="#707070"
+	    		    android:textSize="30.0dip" />
+	    	</RelativeLayout>
+	    	<RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:visibility="gone" 
+				android:id="@+id/listdata_empty"
+			    android:padding="16dp" >
+			    <TextView
+			        android:id="@+id/textViewMessage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:layout_centerVertical="true"
+			        android:drawableTop="@drawable/ic_empty"
+			        android:text="@string/empty_message"
+			        android:textColor="#707070"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			     <TextView
+			         android:layout_below="@id/textViewMessage"
+			         android:layout_centerHorizontal="true"
+			        android:layout_width="wrap_content"
+			        android:layout_margin="5dp"
+			        android:textColor="#707070"
+			        android:layout_height="wrap_content"
+			        android:text="@string/collect_message"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+				</RelativeLayout>
+	</FrameLayout>
+	
+	</LinearLayout>
+</FrameLayout>

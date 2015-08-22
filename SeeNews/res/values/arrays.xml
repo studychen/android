@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- share items -->
+    <string-array name="app_share_items">
+     
+        <item>微信朋友圈</item>
+        <item>微信好友</item>
+        <item>更多...</item>
+        <item>取消</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  
+   <RelativeLayout
+        android:id="@+id/editNews"
+       style="@style/list_style"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false">
+
+       <RelativeLayout
+           android:id="@+id/editText1"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false">
+
+           <TextView
+               android:id="@+id/title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:text="关于南校区学生公寓网络新增接入方式的通知信息化建设处"
+               android:textSize="20dp" 
+               android:lineSpacingMultiplier="1.2" 
+               android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false"/>
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editText1"
+           android:layout_centerHorizontal="true" 
+           android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false">
+
+           <TextView
+               android:id="@+id/read"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="19dp"
+               android:layout_toRightOf="@+id/time"
+               android:text="浏览次数：56"
+               android:textColor="@color/itemtimenum"
+               android:textSize="14dp" 
+               android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false"/>
+
+           <TextView
+               android:id="@+id/time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="58dp"
+               android:text="2014-12-23"
+               android:textColor="@color/itemtimenum"
+               android:textSize="14dp" 
+               android:focusable="false"
+   	   android:clickable="false"
+   	   android:focusableInTouchMode="false"/>
+
+       </RelativeLayout>
+   </RelativeLayout>
+
+</RelativeLayout>

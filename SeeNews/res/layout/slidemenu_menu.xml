@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <!-- 原先最上面的LinearLayout 是 <ScrollView ></ScrollView>  -->
+	<!--  android:background="@drawable/menu_bg" -->
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+		<!-- android:background="#33663300" -->
+		
+        <TextView
+            android:id="@+id/last_news"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_ugc"
+            android:background="@color/clickmenu"
+            android:text="@string/last_news" 
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/notice_news"
+            style="@style/tab_style"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/tab_read"
+            android:clickable="true"
+            android:text="@string/notice_news" />
+
+        <TextView
+            android:id="@+id/academic_news"
+            style="@style/tab_style"
+            android:clickable="true"
+            android:drawableLeft="@drawable/tab_focus"
+            android:text="@string/academic_news" />
+
+        <TextView
+            android:id="@+id/undergraduate_news"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_local"
+            android:clickable="true"
+            android:text="@string/undergraduate_news" />
+
+        <TextView
+            android:id="@+id/postgraduate_news"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_ties"
+            android:clickable="true"
+            android:text="@string/postgraduate_news" />
+
+        <TextView
+            android:id="@+id/research_news"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_pics"
+            android:clickable="true"
+            android:text="@string/research_news" />
+
+        <TextView
+            android:id="@+id/net_news"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_vote"
+            android:clickable="true"
+            android:text="@string/net_news" />
+        
+         <TextView
+            android:id="@+id/menu_collect"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_collect"
+            android:clickable="true"
+            android:text="@string/menu_collect" />
+        
+        <TextView
+            android:id="@+id/menu_setting"
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/ic_menu_setting"
+            android:clickable="true"
+            android:text="@string/menu_setting" />
+
+      <!--   <TextView
+            style="@style/tab_style"
+            android:drawableLeft="@drawable/tab_ugc"
+            android:text="就业招聘" /> -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/news_detail_back" />
+
+        <TextView
+            android:id="@+id/ib_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:clickable="true"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:background="@drawable/top_bar_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dip"
+            android:text="新闻详情"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!--  居右使用的是距离左边元素距离多少的方法 后期要改-->
+        <ImageView
+            android:id="@+id/blog_detail_footbar_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/share3"
+            android:layout_marginLeft="80dip"
+            android:state_pressed="true" />
+    </LinearLayout>
+
+	<ScrollView 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:scrollbars="vertical"
+    	android:fadingEdge="none">
+     	<LinearLayout
+	   		android:orientation="vertical"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="match_parent">	
+		    <RelativeLayout
+		       style="@style/list_style"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_alignParentTop="true" 
+		       android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false">
+		
+		       <RelativeLayout
+		           android:id="@+id/editText1"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content" 
+		           android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false">
+		
+		           <TextView
+		               android:id="@+id/title"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentLeft="true"
+		               android:text="网络连接失败，请检查网络设置"
+		               android:textSize="20dp" 
+		               android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false"/>
+		       </RelativeLayout>
+		
+		       <RelativeLayout
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_below="@id/editText1"
+		           android:layout_centerHorizontal="true" 
+		           android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false">
+		
+		           <TextView
+		               android:id="@+id/read"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentTop="true"
+		               android:layout_marginLeft="19dp"
+		               android:layout_toRightOf="@+id/time"
+		               android:text="浏览次数：null"
+		               android:textColor="#888888"
+		               android:textSize="14dp" 
+		               android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false"/>
+		
+		           <TextView
+		               android:id="@+id/time"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentLeft="true"
+		               android:layout_alignParentTop="true"
+		               android:layout_marginLeft="58dp"
+		               android:text="null"
+		               android:textColor="#888888"
+		               android:textSize="14dp" 
+		               android:focusable="false"
+		   	   android:clickable="false"
+		   	   android:focusableInTouchMode="false"/>
+		
+		       </RelativeLayout>
+		   </RelativeLayout>
+		   
+		    <View style="@style/detail_cut_line"/>
+		    
+		    <WebView android:id="@+id/content" 
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#333333"/>
+			
+			<!-- <TextView android:id="@+id/content" 
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#333333"
+					android:textSize="22dp" 
+					android:autoLink="all"  
+					android:lineSpacingMultiplier="1.2" /> -->
+			
+	    </LinearLayout>	
+	</ScrollView>
+
+	
+</LinearLayout>
