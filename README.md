@@ -2,8 +2,10 @@
 说明
 =======
 此仓库保存个人的一些 Android 项目。
+
 转载请保存出处 [https://github.com/studychen/android/](https://github.com/studychen/android/)
-个人博客，欢迎交流 [enter link description here](http://blog.csdn.net/never_cxb)
+
+个人博客，欢迎交流 [http://blog.csdn.net/never_cxb](http://blog.csdn.net/never_cxb)
 
 目前一共有下面几个项目
 
