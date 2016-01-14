@@ -14,7 +14,7 @@
 
   具体实现思路可参看博客 [Android 短信 轰炸机 app 开发 记录](http://blog.csdn.net/never_cxb/article/details/47614247)
   
-   <img src="http://img.blog.csdn.net/20160107175014409" alt="gifdemo" title="">
+  <img src="http://img.blog.csdn.net/20160114103215842" width="280" height="400" alt="统计结果1" align="center">
 - SeeNews	电院新闻客户端，仿网易新闻
 - SendMessage	网站服务监控
 
