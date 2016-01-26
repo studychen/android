@@ -17,6 +17,6 @@
   <img src="http://img.blog.csdn.net/20160114151526418" width="280" height="400" alt="AppGif" align="center">
 - SeeNews	电院新闻客户端，仿网易新闻
 
-  <img src="http://img.blog.csdn.net/20160117162640833" width="280" height="2000" alt="http://blog.csdn.net/never_cxb" title="">
+  <img src="http://img.blog.csdn.net/20160117162640833" width="280" height="220" alt="http://blog.csdn.net/never_cxb" title="">
 - SendMessage	网站服务监控
 
